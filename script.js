@@ -18,10 +18,32 @@
 // answers[2] = prompt("Напишите город");
 
 // console.log(typeof(answers));
-let a = 10;
-let b = 10;
+// let a = 10;
+// let b = 10;
 
-a++;
-b--;
-console.log(a);
-console.log(b);
+// a++;
+// b--;
+// console.log(a);
+// console.log(b);
+
+let numberOfFilm = prompt("Какой фильм вамнравится", "");
+
+// console.log(numberOfFilm);
+const personalMovieDB = {
+    count: numberOfFilm,
+    movies: {
+
+    },
+    actors: {},
+    genres: [],
+    privat: false
+};
+
+
+
+const askUserMovie = prompt("Один из последних просмотренных фильмов?", ""),
+      askUserEstimate = prompt("На сколько оцените его?", "");
+
+      personalMovieDB.movies[askUserMovie] = askUserEstimate;
+
+console.log(personalMovieDB);
